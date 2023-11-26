@@ -1,0 +1,14 @@
+{
+  "name": "chrome-extension-vue-scaffold",
+  "version": "1.0.0",
+  "repository": "https://github.com/ShanRubyist/chrome-extension-vue-scaffold.git",
+  "author": "shan",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "esbuild": "^0.17.11"
+  }
+}

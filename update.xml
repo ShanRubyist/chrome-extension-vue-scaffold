@@ -1,0 +1,7 @@
+<!-- 此文件放在服务器端，可以自托管更新 chrome 浏览器扩展。需要替换appid、codebase、version 信息 -->
+<?xml version='1.0' encoding='UTF-8'?>
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
+  <app appid='xxxxx'>
+    <updatecheck codebase='https://xxxx/xxxxx.crx' version='0.1' />
+  </app>
+</gupdate>

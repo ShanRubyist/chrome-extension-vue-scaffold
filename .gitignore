@@ -128,3 +128,15 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# src
+src/*
+!src/manifest.json
+!src/icons
+!src/libs
+
+# other
+*.pem
+*.crx
+
