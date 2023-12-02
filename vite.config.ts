@@ -16,7 +16,6 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         popup: resolve(__dirname, "/src/popup/popup.html"),
-        options: resolve(__dirname, "./src/options/options.html"),
       },
       output: {
         // 分包

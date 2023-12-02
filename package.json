@@ -4,6 +4,7 @@
   "repository": "https://github.com/ShanRubyist/chrome-extension-vue-scaffold.git",
   "author": "shan",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "node build.mjs && vite",
     "build": "node build.mjs && vite build",
