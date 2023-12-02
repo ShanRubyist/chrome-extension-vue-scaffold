@@ -82,7 +82,7 @@ async function readFiles(dir, filesArray) {
 
     if (file.isDirectory()) {
       readFiles(filePath, filesArray);
-    } else if (file.isFile()) {
+    } else if (file.isFile() && (path.extname(file.name) != ".vue") && (path.extname(file.name) != ".ts") && (path.extname(file.name) != ".html")) {
       filesArray.push(filePath);
     }
   });
@@ -110,7 +110,6 @@ async function build() {
   await delete_old_dir();
 
   await copy_files(files, process.env.OUTDIR);
-  await copy_files(["vue.global.js"], `${process.env.OUTDIR}/libs`);
 
   // 要放到copy_files之后，OUTDIR 要先存在
   build_manifest_json();
@@ -119,4 +118,6 @@ async function build() {
   await build_js_files();
 }
 
+console.log('start node build.mjs')
 build();
+console.log('node build.mjs success')

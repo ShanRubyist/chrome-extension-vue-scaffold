@@ -5,10 +5,16 @@
   "author": "shan",
   "license": "MIT",
   "scripts": {
-    "build": "node build.mjs"
+    "dev": "node build.mjs && vite",
+    "build": "node build.mjs && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "esbuild": "^0.17.11"
+    "vue": "^3.3.9"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.1",
+    "dotenv": "^16.3.1",
+    "vite": "^5.0.4"
   }
 }
