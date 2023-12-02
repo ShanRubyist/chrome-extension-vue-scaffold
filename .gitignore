@@ -133,8 +133,11 @@ dist
 # src
 src/*
 !src/manifest.json
-!src/icons
-!src/libs
+!src/content_script.*
+!src/service_worker.*
+!src/popup
+!src/public
+
 
 # other
 *.pem

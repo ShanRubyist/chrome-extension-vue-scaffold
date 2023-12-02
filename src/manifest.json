@@ -1,0 +1,40 @@
+{
+  "name": "APP_NAME",
+  "manifest_version": 3,
+  "version": "VERSION",
+  "description": "APP_DESCRIPTION",
+  "icons": {
+    "16": "public/icon16.png",
+    "48": "public/icon48.png",
+    "128": "public/icon128.png"
+  },
+  "action": {
+    "default_tile": "APP_NAME",
+    "default_popup": "src/popup/popup.html"
+  },
+  "options_page": "index.html",
+  "content_scripts": [
+    {
+      "js": ["content_script.js"],
+      "matches": [
+        "https://*/*"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "permissions": [
+    "contextMenus", // 右键菜单
+    "tabs", // 标签
+    "activeTab",
+    "scripting",
+    "notifications", // 通知
+    "webRequest", // web请求
+    "storage", // 插件本地存储
+    "unlimitedStorage"
+  ],
+  "host_permissions": ["https://*/*"],
+  "homepage_url": "HOMEPAGE_URL",
+  "update_url": "UPDATE_URL"
+}
