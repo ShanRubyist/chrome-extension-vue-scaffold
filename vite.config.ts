@@ -25,7 +25,7 @@ export default defineConfig(({ command, mode }) => {
         },
         output: {
           entryFileNames: (chunkInfo) => {
-            console.log(chunkInfo);
+            // console.log(chunkInfo);
             return "[name].js";
           },
           // 分包
