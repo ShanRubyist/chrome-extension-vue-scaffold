@@ -6,8 +6,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "node build.mjs && vite",
-    "build": "node build.mjs && vite build",
+    "build": "vite build && node build.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

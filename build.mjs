@@ -107,17 +107,16 @@ async function readJSFiles(dir, filesArray) {
 }
 
 async function build() {
-  await delete_old_dir();
+  // await delete_old_dir();
 
-  await copy_files(files, process.env.OUTDIR);
+  // await copy_files(files, process.env.OUTDIR);
 
   // 要放到copy_files之后，OUTDIR 要先存在
   build_manifest_json();
 
   // 要放到copy_files之后，把 js 文件通过 ebuild 处理后覆盖
-  await build_js_files();
+  // await build_js_files();
 }
 
-console.log('start node build.mjs')
 build();
 console.log('node build.mjs success')

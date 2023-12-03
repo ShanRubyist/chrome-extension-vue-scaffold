@@ -129,16 +129,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-
-# src
-src/*
-!src/manifest.json
-!src/content_script.*
-!src/service_worker.*
-!src/popup
-!src/public
-
-
 # other
 *.pem
 *.crx
